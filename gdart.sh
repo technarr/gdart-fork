@@ -45,6 +45,7 @@ function usage() {
   echo "    dse.bounds.iter       no. of bounded solving attempts before dropping bounds"
   echo "    dse.bounds.type       fibonacci: uses fibonacci seq. from index 2 (1, 2, 3, 5, ...) as steps"
   echo "    jconstraints.multi=disableUnsatCoreChecking=[true|false]"
+  echo "    dse.coveragereport    generate coverage report: true / false (default)"
   echo ""
 }
 
