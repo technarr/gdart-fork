@@ -1,0 +1,30 @@
+Feb 17, 2025 12:12:28 AM tools.aqua.dse.tree.ConstraintsTree <init>
+INFO: Exploration Strategy: tools.aqua.dse.tree.DFSExplorationStrategy@6fdb1f78
+Feb 17, 2025 12:12:28 AM tools.aqua.dse.tree.ConstraintsTree <init>
+INFO: Incremental solving: true
+Feb 17, 2025 12:12:28 AM tools.aqua.dse.tree.ConstraintsTree <init>
+INFO: Solver: CVC5SolverContext
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Feb 17, 2025 12:12:40 AM tools.aqua.dse.testgeneration.TestGeneratorImpl lambda$generateTestsBasedOnValuations$1
+INFO: Valuation mit 0 folgenden Entries:
+Feb 17, 2025 12:12:40 AM tools.aqua.dse.testgeneration.TestGeneratorImpl lambda$generateTestsBasedOnValuations$1
+INFO: Valuation mit 1 folgenden Entries:
+Feb 17, 2025 12:12:40 AM tools.aqua.dse.testgeneration.TestGeneratorImpl lambda$generateTestsBasedOnValuations$0
+INFO: Variable: '__int_0'
+Wert: -1
+Feb 17, 2025 12:12:40 AM tools.aqua.dse.testgeneration.TestGeneratorImpl lambda$generateTestsBasedOnValuations$1
+INFO: Valuation mit 1 folgenden Entries:
+Feb 17, 2025 12:12:40 AM tools.aqua.dse.testgeneration.TestGeneratorImpl lambda$generateTestsBasedOnValuations$0
+INFO: Variable: '__int_0'
+Wert: 2147483647
+Feb 17, 2025 12:12:40 AM tools.aqua.dse.testgeneration.TestGeneratorImpl lambda$generateTestsBasedOnValuations$1
+INFO: Valuation mit 1 folgenden Entries:
+Feb 17, 2025 12:12:40 AM tools.aqua.dse.testgeneration.TestGeneratorImpl lambda$generateTestsBasedOnValuations$0
+INFO: Variable: '__int_0'
+Wert: -2147483648
+Feb 17, 2025 12:12:40 AM tools.aqua.dse.testgeneration.FileWriterImpl saveTestClass
+INFO: Base directory for saving test class: /mnt/c/PrivateProjects/BA_24/gdart-fork
+Feb 17, 2025 12:12:40 AM tools.aqua.dse.testgeneration.FileWriterImpl saveTestClass
+INFO: Successfully saved file: /mnt/c/PrivateProjects/BA_24/gdart-fork/coverage-report/src/test/java/IntegerCasesTest.java

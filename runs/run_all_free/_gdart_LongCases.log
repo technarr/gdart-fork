@@ -1,0 +1,34 @@
+Random seed: 2291868543485603551
+./executor.sh          -cp /tmp/tmp.FwZLJR3iUC:./verifier-stub/target/verifier-stub-1.0.jar -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true -Dtaint.flow=OFF LongCases
+Decision{condition=('__long_0' != -9223372036854775808), branches=2, branchId=1, assumption=false}
+Decision{condition=('__long_0' != 9223372036854775807), branches=2, branchId=1, assumption=false}
+Decision{condition=('__long_0' == 0), branches=2, branchId=0, assumption=false}
+OK: 
+./executor.sh      -Dconcolic.longs=[b64]LTE=    -cp /tmp/tmp.FwZLJR3iUC:./verifier-stub/target/verifier-stub-1.0.jar -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true -Dtaint.flow=OFF LongCases
+Decision{condition=('__long_0' != -9223372036854775808), branches=2, branchId=1, assumption=false}
+Decision{condition=('__long_0' != 9223372036854775807), branches=2, branchId=1, assumption=false}
+Decision{condition=('__long_0' != 0), branches=2, branchId=1, assumption=false}
+OK: 
+./executor.sh      -Dconcolic.longs=[b64]OTIyMzM3MjAzNjg1NDc3NTgwNw==    -cp /tmp/tmp.FwZLJR3iUC:./verifier-stub/target/verifier-stub-1.0.jar -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true -Dtaint.flow=OFF LongCases
+Decision{condition=('__long_0' != -9223372036854775808), branches=2, branchId=1, assumption=false}
+Decision{condition=('__long_0' == 9223372036854775807), branches=2, branchId=0, assumption=false}
+OK: 
+./executor.sh      -Dconcolic.longs=[b64]LTkyMjMzNzIwMzY4NTQ3NzU4MDg=    -cp /tmp/tmp.FwZLJR3iUC:./verifier-stub/target/verifier-stub-1.0.jar -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true -Dtaint.flow=OFF LongCases
+Decision{condition=('__long_0' == -9223372036854775808), branches=2, branchId=0, assumption=false}
+OK: 
+Config.isCoverageReport: trueTRYING TO WRITE FILE: /mnt/c/PrivateProjects/BA_24/gdart-fork/coverage-report/src/test/java/LongCasesTest.java
+Successfully saved file: /mnt/c/PrivateProjects/BA_24/gdart-fork/coverage-report/src/test/java/LongCasesTest.java
+
++ 0 : ('__long_0' == -9223372036854775808)
+  + OK[complete path:true] . __long_0:=-9223372036854775808
++ 1 : ('__long_0' != -9223372036854775808)
+  + 0 : ('__long_0' == 9223372036854775807)
+    + OK[complete path:true] . __long_0:=9223372036854775807
+  + 1 : ('__long_0' != 9223372036854775807)
+    + 0 : ('__long_0' == 0)
+      + OK[complete path:true] . 
+    + 1 : ('__long_0' != 0)
+      + OK[complete path:true] . __long_0:=-1
+
+Flows recorded for 4 paths. Using 4 (1.0) paths for information flow analysis.
+[END OF OUTPUT]

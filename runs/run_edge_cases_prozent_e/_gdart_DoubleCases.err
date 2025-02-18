@@ -1,0 +1,49 @@
+Feb 17, 2025 12:17:03 AM tools.aqua.dse.tree.ConstraintsTree <init>
+INFO: Exploration Strategy: tools.aqua.dse.tree.DFSExplorationStrategy@6fdb1f78
+Feb 17, 2025 12:17:03 AM tools.aqua.dse.tree.ConstraintsTree <init>
+INFO: Incremental solving: true
+Feb 17, 2025 12:17:03 AM tools.aqua.dse.tree.ConstraintsTree <init>
+INFO: Solver: CVC5SolverContext
+Feb 17, 2025 12:17:07 AM tools.aqua.dse.tree.ConstraintsTree assertExpression
+WARNING: Failed to add constrtaint [Lgov.nasa.jpf.constraints.api.Expression;@2f943d71 due to io.github.cvc5.CVC5ApiException: Expected val '-4503599627370496' to be non negative.
+Feb 17, 2025 12:17:15 AM tools.aqua.dse.tree.ConstraintsTree assertExpression
+WARNING: Failed to add constrtaint [Lgov.nasa.jpf.constraints.api.Expression;@7e2d773b due to io.github.cvc5.CVC5ApiException: Expected val '-4503599627370496' to be non negative.
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Feb 17, 2025 12:17:23 AM tools.aqua.dse.testgeneration.TestGeneratorImpl lambda$generateTestsBasedOnValuations$1
+INFO: Valuation mit 0 folgenden Entries:
+Feb 17, 2025 12:17:23 AM tools.aqua.dse.testgeneration.TestGeneratorImpl lambda$generateTestsBasedOnValuations$1
+INFO: Valuation mit 1 folgenden Entries:
+Feb 17, 2025 12:17:23 AM tools.aqua.dse.testgeneration.TestGeneratorImpl lambda$generateTestsBasedOnValuations$0
+INFO: Variable: '__double_0'
+Wert: 8.988465674311579E307
+Feb 17, 2025 12:17:23 AM tools.aqua.dse.testgeneration.TestGeneratorImpl lambda$generateTestsBasedOnValuations$1
+INFO: Valuation mit 1 folgenden Entries:
+Feb 17, 2025 12:17:23 AM tools.aqua.dse.testgeneration.TestGeneratorImpl lambda$generateTestsBasedOnValuations$0
+INFO: Variable: '__double_0'
+Wert: 1.7976931348623157E308
+Feb 17, 2025 12:17:23 AM tools.aqua.dse.testgeneration.TestGeneratorImpl lambda$generateTestsBasedOnValuations$1
+INFO: Valuation mit 1 folgenden Entries:
+Feb 17, 2025 12:17:23 AM tools.aqua.dse.testgeneration.TestGeneratorImpl lambda$generateTestsBasedOnValuations$0
+INFO: Variable: '__double_0'
+Wert: 4.9E-324
+Feb 17, 2025 12:17:23 AM tools.aqua.dse.testgeneration.TestGeneratorImpl lambda$generateTestsBasedOnValuations$1
+INFO: Valuation mit 1 folgenden Entries:
+Feb 17, 2025 12:17:23 AM tools.aqua.dse.testgeneration.TestGeneratorImpl lambda$generateTestsBasedOnValuations$0
+INFO: Variable: '__double_0'
+Wert: 4.9E-324
+Feb 17, 2025 12:17:23 AM tools.aqua.dse.testgeneration.TestGeneratorImpl lambda$generateTestsBasedOnValuations$1
+INFO: Valuation mit 1 folgenden Entries:
+Feb 17, 2025 12:17:23 AM tools.aqua.dse.testgeneration.TestGeneratorImpl lambda$generateTestsBasedOnValuations$0
+INFO: Variable: '__double_0'
+Wert: Infinity
+Feb 17, 2025 12:17:23 AM tools.aqua.dse.testgeneration.TestGeneratorImpl lambda$generateTestsBasedOnValuations$1
+INFO: Valuation mit 1 folgenden Entries:
+Feb 17, 2025 12:17:23 AM tools.aqua.dse.testgeneration.TestGeneratorImpl lambda$generateTestsBasedOnValuations$0
+INFO: Variable: '__double_0'
+Wert: NaN
+Feb 17, 2025 12:17:24 AM tools.aqua.dse.testgeneration.FileWriterImpl saveTestClass
+INFO: Base directory for saving test class: /mnt/c/PrivateProjects/BA_24/gdart-fork
+Feb 17, 2025 12:17:24 AM tools.aqua.dse.testgeneration.FileWriterImpl saveTestClass
+INFO: Successfully saved file: /mnt/c/PrivateProjects/BA_24/gdart-fork/coverage-report/src/test/java/DoubleCasesTest.java

@@ -1,0 +1,17 @@
+Random seed: 946024394535696735
+./executor.sh          -cp /tmp/tmp.GZfK3yVMgy:./verifier-stub/target/verifier-stub-1.0.jar -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true -Dtaint.flow=OFF ExceptionHandling
+Decision{condition=('__int_1' == 0), branches=2, branchId=1, assumption=false}
+OK: 
+./executor.sh     -Dconcolic.ints=[b64]MA==,LTE=     -cp /tmp/tmp.GZfK3yVMgy:./verifier-stub/target/verifier-stub-1.0.jar -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true -Dtaint.flow=OFF ExceptionHandling
+Decision{condition=('__int_1' != 0), branches=2, branchId=0, assumption=false}
+OK: 
+Config.isCoverageReport: trueTRYING TO WRITE FILE: /mnt/c/PrivateProjects/BA_24/gdart-fork/coverage-report/src/test/java/ExceptionHandlingTest.java
+Successfully saved file: /mnt/c/PrivateProjects/BA_24/gdart-fork/coverage-report/src/test/java/ExceptionHandlingTest.java
+
++ 0 : ('__int_1' != 0)
+  + OK[complete path:true] . __int_1:=-1
++ 1 : ('__int_1' == 0)
+  + OK[complete path:true] . 
+
+Flows recorded for 2 paths. Using 2 (1.0) paths for information flow analysis.
+[END OF OUTPUT]

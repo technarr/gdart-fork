@@ -1,0 +1,11 @@
+Feb 13, 2025 1:29:23 AM tools.aqua.dse.tree.ConstraintsTree <init>
+INFO: Exploration Strategy: tools.aqua.dse.tree.DFSExplorationStrategy@6fdb1f78
+Feb 13, 2025 1:29:23 AM tools.aqua.dse.tree.ConstraintsTree <init>
+INFO: Incremental solving: true
+Feb 13, 2025 1:29:23 AM tools.aqua.dse.tree.ConstraintsTree <init>
+INFO: Solver: CVC5SolverContext
+Exception in thread "main" java.lang.ClassCastException: class tools.aqua.dse.tree.DecisionNode cannot be cast to class tools.aqua.dse.tree.LeafNode (tools.aqua.dse.tree.DecisionNode and tools.aqua.dse.tree.LeafNode are in unnamed module of loader 'app')
+	at tools.aqua.dse.tree.ConstraintsTree.finish(ConstraintsTree.java:233)
+	at tools.aqua.dse.Explorer.addTrace(Explorer.java:43)
+	at tools.aqua.dse.DSE.executeAnalysis(DSE.java:63)
+	at tools.aqua.dse.DSELauncher.main(DSELauncher.java:35)

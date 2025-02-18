@@ -1,0 +1,14 @@
+Random seed: -5469762278619475961
+./executor.sh          -cp /tmp/tmp.D3Vjkf5u18:./verifier-stub/target/verifier-stub-1.0.jar -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true -Dtaint.flow=OFF OverapproximationString01
+Decision{condition=!(=(str.++ abc '__string_0') not possible) , branches=2, branchId=1, assumption=false}
+ERROR: java/lang/AssertionError
+Config.isCoverageReport: trueTRYING TO WRITE FILE: /mnt/c/PrivateProjects/BA_24/gdart-fork/coverage-report/src/test/java/OverapproximationString01Test.java
+Successfully saved file: /mnt/c/PrivateProjects/BA_24/gdart-fork/coverage-report/src/test/java/OverapproximationString01Test.java
+
++ 0 : !!(=(str.++ abc '__string_0') not possible) 
+  + UNSAT
++ 1 : !(=(str.++ abc '__string_0') not possible) 
+  + ERROR[complete path:true] .  . java/lang/AssertionError
+
+Flows recorded for 1 paths. Using 1 (1.0) paths for information flow analysis.
+[END OF OUTPUT]

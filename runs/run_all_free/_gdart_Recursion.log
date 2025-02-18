@@ -1,0 +1,59 @@
+Random seed: -755431030102739118
+./executor.sh          -cp /tmp/tmp.fxhXrCJbxo:./verifier-stub/target/verifier-stub-1.0.jar -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true -Dtaint.flow=OFF Recursion
+Decision{condition=(5 bvsgt '__int_0'), branches=2, branchId=0, assumption=false}
+Decision{condition=!('__int_0' bvsgt 0), branches=2, branchId=0, assumption=false}
+OK: 
+./executor.sh     -Dconcolic.ints=[b64]MQ==     -cp /tmp/tmp.fxhXrCJbxo:./verifier-stub/target/verifier-stub-1.0.jar -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true -Dtaint.flow=OFF Recursion
+Decision{condition=(5 bvsgt '__int_0'), branches=2, branchId=0, assumption=false}
+Decision{condition=('__int_0' bvsgt 0), branches=2, branchId=1, assumption=false}
+Decision{condition=!(('__int_0' bvsub 1) bvsgt 0), branches=2, branchId=0, assumption=false}
+OK: 
+./executor.sh     -Dconcolic.ints=[b64]Mg==     -cp /tmp/tmp.fxhXrCJbxo:./verifier-stub/target/verifier-stub-1.0.jar -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true -Dtaint.flow=OFF Recursion
+Decision{condition=(5 bvsgt '__int_0'), branches=2, branchId=0, assumption=false}
+Decision{condition=('__int_0' bvsgt 0), branches=2, branchId=1, assumption=false}
+Decision{condition=(('__int_0' bvsub 1) bvsgt 0), branches=2, branchId=1, assumption=false}
+Decision{condition=!((('__int_0' bvsub 1) bvsub 1) bvsgt 0), branches=2, branchId=0, assumption=false}
+OK: 
+./executor.sh     -Dconcolic.ints=[b64]Mw==     -cp /tmp/tmp.fxhXrCJbxo:./verifier-stub/target/verifier-stub-1.0.jar -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true -Dtaint.flow=OFF Recursion
+Decision{condition=(5 bvsgt '__int_0'), branches=2, branchId=0, assumption=false}
+Decision{condition=('__int_0' bvsgt 0), branches=2, branchId=1, assumption=false}
+Decision{condition=(('__int_0' bvsub 1) bvsgt 0), branches=2, branchId=1, assumption=false}
+Decision{condition=((('__int_0' bvsub 1) bvsub 1) bvsgt 0), branches=2, branchId=1, assumption=false}
+Decision{condition=!(((('__int_0' bvsub 1) bvsub 1) bvsub 1) bvsgt 0), branches=2, branchId=0, assumption=false}
+OK: 
+./executor.sh     -Dconcolic.ints=[b64]NA==     -cp /tmp/tmp.fxhXrCJbxo:./verifier-stub/target/verifier-stub-1.0.jar -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true -Dtaint.flow=OFF Recursion
+Decision{condition=(5 bvsgt '__int_0'), branches=2, branchId=0, assumption=false}
+Decision{condition=('__int_0' bvsgt 0), branches=2, branchId=1, assumption=false}
+Decision{condition=(('__int_0' bvsub 1) bvsgt 0), branches=2, branchId=1, assumption=false}
+Decision{condition=((('__int_0' bvsub 1) bvsub 1) bvsgt 0), branches=2, branchId=1, assumption=false}
+Decision{condition=(((('__int_0' bvsub 1) bvsub 1) bvsub 1) bvsgt 0), branches=2, branchId=1, assumption=false}
+Decision{condition=!((((('__int_0' bvsub 1) bvsub 1) bvsub 1) bvsub 1) bvsgt 0), branches=2, branchId=0, assumption=false}
+OK: 
+./executor.sh     -Dconcolic.ints=[b64]MjE0NzQ4MzY0NA==     -cp /tmp/tmp.fxhXrCJbxo:./verifier-stub/target/verifier-stub-1.0.jar -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true -Dtaint.flow=OFF Recursion
+Decision{condition=(5 bvsle '__int_0'), branches=2, branchId=1, assumption=false}
+OK: 
+Config.isCoverageReport: trueTRYING TO WRITE FILE: /mnt/c/PrivateProjects/BA_24/gdart-fork/coverage-report/src/test/java/RecursionTest.java
+Successfully saved file: /mnt/c/PrivateProjects/BA_24/gdart-fork/coverage-report/src/test/java/RecursionTest.java
+
++ 0 : (5 bvsgt '__int_0')
+  + 0 : !('__int_0' bvsgt 0)
+    + OK[complete path:true] . 
+  + 1 : ('__int_0' bvsgt 0)
+    + 0 : !(('__int_0' bvsub 1) bvsgt 0)
+      + OK[complete path:true] . __int_0:=1
+    + 1 : (('__int_0' bvsub 1) bvsgt 0)
+      + 0 : !((('__int_0' bvsub 1) bvsub 1) bvsgt 0)
+        + OK[complete path:true] . __int_0:=2
+      + 1 : ((('__int_0' bvsub 1) bvsub 1) bvsgt 0)
+        + 0 : !(((('__int_0' bvsub 1) bvsub 1) bvsub 1) bvsgt 0)
+          + OK[complete path:true] . __int_0:=3
+        + 1 : (((('__int_0' bvsub 1) bvsub 1) bvsub 1) bvsgt 0)
+          + 0 : !((((('__int_0' bvsub 1) bvsub 1) bvsub 1) bvsub 1) bvsgt 0)
+            + OK[complete path:true] . __int_0:=4
+          + 1 : !!((((('__int_0' bvsub 1) bvsub 1) bvsub 1) bvsub 1) bvsgt 0)
+            + UNSAT
++ 1 : (5 bvsle '__int_0')
+  + OK[complete path:true] . __int_0:=2147483644
+
+Flows recorded for 6 paths. Using 6 (1.0) paths for information flow analysis.
+[END OF OUTPUT]

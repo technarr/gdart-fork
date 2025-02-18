@@ -1,0 +1,10 @@
+Random seed: 8737783742904707421
+./executor.sh          -cp /tmp/tmp.jDPWbrzfAh:./verifier-stub/target/verifier-stub-1.0.jar   BoundCheck30
+OK: 
+Config.isCoverageReport: trueTRYING TO WRITE FILE: /mnt/c/PrivateProjects/BA_24/gdart-fork/coverage-report/src/test/java/BoundCheck30Test.java
+Successfully saved file: /mnt/c/PrivateProjects/BA_24/gdart-fork/coverage-report/src/test/java/BoundCheck30Test.java
+
++ OK[complete path:true] . 
+
+Flows recorded for 1 paths. Using 1 (1.0) paths for information flow analysis.
+[END OF OUTPUT]

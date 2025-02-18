@@ -1,0 +1,68 @@
+Random seed: 4099082626380779092
+./executor.sh          -cp /tmp/tmp.g6W3VujkEJ:./verifier-stub/target/verifier-stub-1.0.jar -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true -Dtaint.flow=OFF FloatCases
+Decision{condition=(fp.eq '__float_0' '__float_0'), branches=2, branchId=1, assumption=false}
+Decision{condition=!(fp.eq '__float_0' Infinity), branches=2, branchId=1, assumption=false}
+Decision{condition=!(fp.eq '__float_0' -Infinity), branches=2, branchId=1, assumption=false}
+Decision{condition=!(fp.eq '__float_0' 1.4E-45), branches=2, branchId=1, assumption=false}
+Decision{condition=!(fp.eq '__float_0' 3.4028235E38), branches=2, branchId=1, assumption=false}
+Decision{condition=(fp.eq '__float_0' 0.0), branches=2, branchId=0, assumption=false}
+OK: 
+./executor.sh       -Dconcolic.floats=[b64]MS43MDE0MTE3RTM4   -cp /tmp/tmp.g6W3VujkEJ:./verifier-stub/target/verifier-stub-1.0.jar -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true -Dtaint.flow=OFF FloatCases
+Decision{condition=(fp.eq '__float_0' '__float_0'), branches=2, branchId=1, assumption=false}
+Decision{condition=!(fp.eq '__float_0' Infinity), branches=2, branchId=1, assumption=false}
+Decision{condition=!(fp.eq '__float_0' -Infinity), branches=2, branchId=1, assumption=false}
+Decision{condition=!(fp.eq '__float_0' 1.4E-45), branches=2, branchId=1, assumption=false}
+Decision{condition=!(fp.eq '__float_0' 3.4028235E38), branches=2, branchId=1, assumption=false}
+Decision{condition=!(fp.eq '__float_0' 0.0), branches=2, branchId=1, assumption=false}
+OK: 
+./executor.sh       -Dconcolic.floats=[b64]My40MDI4MjM1RTM4   -cp /tmp/tmp.g6W3VujkEJ:./verifier-stub/target/verifier-stub-1.0.jar -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true -Dtaint.flow=OFF FloatCases
+Decision{condition=(fp.eq '__float_0' '__float_0'), branches=2, branchId=1, assumption=false}
+Decision{condition=!(fp.eq '__float_0' Infinity), branches=2, branchId=1, assumption=false}
+Decision{condition=!(fp.eq '__float_0' -Infinity), branches=2, branchId=1, assumption=false}
+Decision{condition=!(fp.eq '__float_0' 1.4E-45), branches=2, branchId=1, assumption=false}
+Decision{condition=(fp.eq '__float_0' 3.4028235E38), branches=2, branchId=0, assumption=false}
+OK: 
+./executor.sh       -Dconcolic.floats=[b64]MS40RS00NQ==   -cp /tmp/tmp.g6W3VujkEJ:./verifier-stub/target/verifier-stub-1.0.jar -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true -Dtaint.flow=OFF FloatCases
+Decision{condition=(fp.eq '__float_0' '__float_0'), branches=2, branchId=1, assumption=false}
+Decision{condition=!(fp.eq '__float_0' Infinity), branches=2, branchId=1, assumption=false}
+Decision{condition=!(fp.eq '__float_0' -Infinity), branches=2, branchId=1, assumption=false}
+Decision{condition=(fp.eq '__float_0' 1.4E-45), branches=2, branchId=0, assumption=false}
+OK: 
+./executor.sh       -Dconcolic.floats=[b64]MS40RS00NQ==   -cp /tmp/tmp.g6W3VujkEJ:./verifier-stub/target/verifier-stub-1.0.jar -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true -Dtaint.flow=OFF FloatCases
+Decision{condition=(fp.eq '__float_0' '__float_0'), branches=2, branchId=1, assumption=false}
+Decision{condition=!(fp.eq '__float_0' Infinity), branches=2, branchId=1, assumption=false}
+Decision{condition=!(fp.eq '__float_0' -Infinity), branches=2, branchId=1, assumption=false}
+Decision{condition=(fp.eq '__float_0' 1.4E-45), branches=2, branchId=0, assumption=false}
+OK: 
+./executor.sh       -Dconcolic.floats=[b64]SW5maW5pdHk=   -cp /tmp/tmp.g6W3VujkEJ:./verifier-stub/target/verifier-stub-1.0.jar -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true -Dtaint.flow=OFF FloatCases
+Decision{condition=(fp.eq '__float_0' '__float_0'), branches=2, branchId=1, assumption=false}
+Decision{condition=(fp.eq '__float_0' Infinity), branches=2, branchId=0, assumption=false}
+OK: 
+./executor.sh       -Dconcolic.floats=[b64]TmFO   -cp /tmp/tmp.g6W3VujkEJ:./verifier-stub/target/verifier-stub-1.0.jar -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true -Dtaint.flow=OFF FloatCases
+Decision{condition=!(fp.eq '__float_0' '__float_0'), branches=2, branchId=0, assumption=false}
+OK: 
+Config.isCoverageReport: trueTRYING TO WRITE FILE: /mnt/c/PrivateProjects/BA_24/gdart-fork/coverage-report/src/test/java/FloatCasesTest.java
+Successfully saved file: /mnt/c/PrivateProjects/BA_24/gdart-fork/coverage-report/src/test/java/FloatCasesTest.java
+
++ 0 : !(fp.eq '__float_0' '__float_0')
+  + OK[complete path:true] . __float_0:=NaN
++ 1 : (fp.eq '__float_0' '__float_0')
+  + 0 : (fp.eq '__float_0' Infinity)
+    + OK[complete path:true] . __float_0:=Infinity
+  + 1 : !(fp.eq '__float_0' Infinity)
+    + 0 : !!(fp.eq '__float_0' -Infinity)
+      + DIVERGED[complete path:true] . __float_0:=1.4E-45
+    + 1 : !(fp.eq '__float_0' -Infinity)
+      + 0 : (fp.eq '__float_0' 1.4E-45)
+        + OK[complete path:true] . __float_0:=1.4E-45
+      + 1 : !(fp.eq '__float_0' 1.4E-45)
+        + 0 : (fp.eq '__float_0' 3.4028235E38)
+          + OK[complete path:true] . __float_0:=3.4028235E38
+        + 1 : !(fp.eq '__float_0' 3.4028235E38)
+          + 0 : (fp.eq '__float_0' 0.0)
+            + OK[complete path:true] . 
+          + 1 : !(fp.eq '__float_0' 0.0)
+            + OK[complete path:true] . __float_0:=1.7014117E38
+
+Flows recorded for 7 paths. Using 7 (1.0) paths for information flow analysis.
+[END OF OUTPUT]

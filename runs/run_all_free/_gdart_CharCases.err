@@ -1,0 +1,14 @@
+Feb 13, 2025 1:31:03 AM tools.aqua.dse.tree.ConstraintsTree <init>
+INFO: Exploration Strategy: tools.aqua.dse.tree.DFSExplorationStrategy@6fdb1f78
+Feb 13, 2025 1:31:03 AM tools.aqua.dse.tree.ConstraintsTree <init>
+INFO: Incremental solving: true
+Feb 13, 2025 1:31:03 AM tools.aqua.dse.tree.ConstraintsTree <init>
+INFO: Solver: CVC5SolverContext
+Exception in thread "main" java.lang.UnsupportedOperationException: Incomplete Type list. Missed: sint16
+	at io.github.tudoaqua.jconstraints.cvc5.CVC5Solver.addRightBitvectorType(CVC5Solver.java:182)
+	at io.github.tudoaqua.jconstraints.cvc5.CVC5Solver.getModel(CVC5Solver.java:121)
+	at io.github.tudoaqua.jconstraints.cvc5.CVC5SolverContext.solve(CVC5SolverContext.java:101)
+	at tools.aqua.dse.tree.ConstraintsTree.findNext(ConstraintsTree.java:481)
+	at tools.aqua.dse.Explorer.addTrace(Explorer.java:45)
+	at tools.aqua.dse.DSE.executeAnalysis(DSE.java:63)
+	at tools.aqua.dse.DSELauncher.main(DSELauncher.java:35)

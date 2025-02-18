@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="de"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>DoubleCases.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">coverage-report</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">DoubleCases.java</span></div><h1>DoubleCases.java</h1><pre class="source lang-java linenums">import tools.aqua.concolic.Verifier;
+
+<span class="nc" id="L3">public class DoubleCases {</span>
+    private static double doubleVal;
+    public static void main(String[] args){
+<span class="fc" id="L6">        doubleVal = Verifier.nondetDouble();</span>
+
+        // Double type conditions (edge cases)
+<span class="pc bpc" id="L9" title="1 of 2 branches missed.">        if (Double.isNaN(doubleVal)) {</span>
+<span class="nc" id="L10">            System.out.println(&quot;Double is NaN&quot;);</span>
+<span class="pc bpc" id="L11" title="1 of 2 branches missed.">        } else if (doubleVal == Double.POSITIVE_INFINITY) {</span>
+<span class="nc" id="L12">            System.out.println(&quot;Double is POSITIVE_INFINITY&quot;);</span>
+<span class="pc bpc" id="L13" title="1 of 2 branches missed.">        } else if (doubleVal == Double.NEGATIVE_INFINITY) {</span>
+<span class="nc" id="L14">            System.out.println(&quot;Double is NEGATIVE_INFINITY&quot;);</span>
+<span class="pc bpc" id="L15" title="1 of 2 branches missed.">        } else if (doubleVal == Double.MIN_VALUE) {</span>
+<span class="nc" id="L16">            System.out.println(&quot;Double is MIN_VALUE&quot;);</span>
+<span class="pc bpc" id="L17" title="1 of 2 branches missed.">        } else if (doubleVal == Double.MAX_VALUE) {</span>
+<span class="nc" id="L18">            System.out.println(&quot;Double is MAX_VALUE&quot;);</span>
+<span class="pc bpc" id="L19" title="1 of 2 branches missed.">        } else if (doubleVal == 0.0) {</span>
+<span class="fc" id="L20">            System.out.println(&quot;Double is zero&quot;);</span>
+        }
+<span class="fc" id="L22">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

@@ -1,0 +1,15 @@
+Feb 17, 2025 12:10:36 AM tools.aqua.dse.tree.ConstraintsTree <init>
+INFO: Exploration Strategy: tools.aqua.dse.tree.DFSExplorationStrategy@6fdb1f78
+Feb 17, 2025 12:10:37 AM tools.aqua.dse.tree.ConstraintsTree <init>
+INFO: Incremental solving: true
+Feb 17, 2025 12:10:37 AM tools.aqua.dse.tree.ConstraintsTree <init>
+INFO: Solver: CVC5SolverContext
+Exception in thread "main" java.lang.ArithmeticException: BigInteger out of byte range
+	at java.base/java.math.BigInteger.byteValueExact(BigInteger.java:4891)
+	at io.github.tudoaqua.jconstraints.cvc5.CVC5Solver.addRightBitvectorType(CVC5Solver.java:171)
+	at io.github.tudoaqua.jconstraints.cvc5.CVC5Solver.getModel(CVC5Solver.java:121)
+	at io.github.tudoaqua.jconstraints.cvc5.CVC5SolverContext.solve(CVC5SolverContext.java:101)
+	at tools.aqua.dse.tree.ConstraintsTree.findNext(ConstraintsTree.java:481)
+	at tools.aqua.dse.Explorer.addTrace(Explorer.java:45)
+	at tools.aqua.dse.DSE.executeAnalysis(DSE.java:63)
+	at tools.aqua.dse.DSELauncher.main(DSELauncher.java:35)

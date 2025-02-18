@@ -1,0 +1,25 @@
+Random seed: 1626581238480540837
+./executor.sh          -cp /tmp/tmp.cbEY733ZYa:./verifier-stub/target/verifier-stub-1.0.jar -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true -Dtaint.flow=OFF InfiniteLoop
+Decision{condition=(2147483646 != '__int_0'), branches=2, branchId=1, assumption=false}
+OK: 
+./executor.sh     -Dconcolic.ints=[b64]MjE0NzQ4MzY0Ng==     -cp /tmp/tmp.cbEY733ZYa:./verifier-stub/target/verifier-stub-1.0.jar -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true -Dtaint.flow=OFF InfiniteLoop
+Decision{condition=(2147483646 == '__int_0'), branches=2, branchId=0, assumption=false}
+Decision{condition=((((1 bvadd '__int_0') ^ 1) & ((1 bvadd '__int_0') ^ '__int_0')) bvsge 0), branches=2, branchId=1, assumption=false}
+Decision{condition=!((((1 bvadd (1 bvadd '__int_0')) ^ 1) & ((1 bvadd (1 bvadd '__int_0')) ^ (1 bvadd '__int_0'))) bvsge 0), branches=2, branchId=0, assumption=false}
+OK: 
+Config.isCoverageReport: trueTRYING TO WRITE FILE: /mnt/c/PrivateProjects/BA_24/gdart-fork/coverage-report/src/test/java/InfiniteLoopTest.java
+Successfully saved file: /mnt/c/PrivateProjects/BA_24/gdart-fork/coverage-report/src/test/java/InfiniteLoopTest.java
+
++ 0 : (2147483646 == '__int_0')
+  + 0 : !((((1 bvadd '__int_0') ^ 1) & ((1 bvadd '__int_0') ^ '__int_0')) bvsge 0)
+    + UNSAT
+  + 1 : ((((1 bvadd '__int_0') ^ 1) & ((1 bvadd '__int_0') ^ '__int_0')) bvsge 0)
+    + 0 : !((((1 bvadd (1 bvadd '__int_0')) ^ 1) & ((1 bvadd (1 bvadd '__int_0')) ^ (1 bvadd '__int_0'))) bvsge 0)
+      + OK[complete path:true] . __int_0:=2147483646
+    + 1 : !!((((1 bvadd (1 bvadd '__int_0')) ^ 1) & ((1 bvadd (1 bvadd '__int_0')) ^ (1 bvadd '__int_0'))) bvsge 0)
+      + UNSAT
++ 1 : (2147483646 != '__int_0')
+  + OK[complete path:true] . 
+
+Flows recorded for 2 paths. Using 2 (1.0) paths for information flow analysis.
+[END OF OUTPUT]

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="de"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>OverapproximationString01.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">coverage-report</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">OverapproximationString01.java</span></div><h1>OverapproximationString01.java</h1><pre class="source lang-java linenums">/*
+ * Contributed to SV-COMP by Malte Mues
+ * License: MIT (see /java/jdart-regression/LICENSE-MIT)
+ */
+
+import tools.aqua.concolic.Verifier;
+
+<span class="fc" id="L8">public class OverapproximationString01 {</span>
+  public void foo(String s) {
+<span class="fc" id="L10">    String prefix = &quot;abc&quot;;</span>
+<span class="fc" id="L11">    String complete = prefix + s;</span>
+<span class="pc bpc" id="L12" title="1 of 2 branches missed.">    if (complete.equals(&quot;not possible&quot;)) {</span>
+      assert (true);
+    } else {
+<span class="fc" id="L15">      assert (false);</span>
+    }
+<span class="nc" id="L17">  }</span>
+
+  public static void main(String args[]) {
+<span class="fc" id="L20">    OverapproximationString01 c = new OverapproximationString01();</span>
+<span class="fc" id="L21">    String input = Verifier.nondetString();</span>
+<span class="nc" id="L22">    c.foo(input);</span>
+<span class="nc" id="L23">  }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

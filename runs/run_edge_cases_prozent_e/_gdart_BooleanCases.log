@@ -1,0 +1,17 @@
+Random seed: 1506431536424445051
+./executor.sh          -cp /tmp/tmp.gYWceWvQAf:./verifier-stub/target/verifier-stub-1.0.jar -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true -Dtaint.flow=OFF BooleanCases
+Decision{condition=!'__bool_0', branches=2, branchId=1, assumption=false}
+OK: 
+./executor.sh -Dconcolic.bools=[b64]dHJ1ZQ==         -cp /tmp/tmp.gYWceWvQAf:./verifier-stub/target/verifier-stub-1.0.jar -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true -Dtaint.flow=OFF BooleanCases
+Decision{condition='__bool_0', branches=2, branchId=0, assumption=false}
+OK: 
+Config.isCoverageReport: trueTRYING TO WRITE FILE: /mnt/c/PrivateProjects/BA_24/gdart-fork/coverage-report/src/test/java/BooleanCasesTest.java
+Successfully saved file: /mnt/c/PrivateProjects/BA_24/gdart-fork/coverage-report/src/test/java/BooleanCasesTest.java
+
++ 0 : '__bool_0'
+  + OK[complete path:true] . __bool_0:=true
++ 1 : !'__bool_0'
+  + OK[complete path:true] . 
+
+Flows recorded for 2 paths. Using 2 (1.0) paths for information flow analysis.
+[END OF OUTPUT]

@@ -1,0 +1,17 @@
+Feb 13, 2025 1:32:01 AM tools.aqua.dse.tree.ConstraintsTree <init>
+INFO: Exploration Strategy: tools.aqua.dse.tree.DFSExplorationStrategy@6fdb1f78
+Feb 13, 2025 1:32:02 AM tools.aqua.dse.tree.ConstraintsTree <init>
+INFO: Incremental solving: true
+Feb 13, 2025 1:32:02 AM tools.aqua.dse.tree.ConstraintsTree <init>
+INFO: Solver: CVC5SolverContext
+Feb 13, 2025 1:32:05 AM tools.aqua.dse.tree.ConstraintsTree assertExpression
+WARNING: Failed to add constrtaint [Lgov.nasa.jpf.constraints.api.Expression;@2f943d71 due to io.github.cvc5.CVC5ApiException: Expected val '-8388608' to be non negative.
+Feb 13, 2025 1:32:14 AM tools.aqua.dse.tree.ConstraintsTree assertExpression
+WARNING: Failed to add constrtaint [Lgov.nasa.jpf.constraints.api.Expression;@7e2d773b due to io.github.cvc5.CVC5ApiException: Expected val '-8388608' to be non negative.
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Feb 13, 2025 1:32:22 AM tools.aqua.dse.testgeneration.FileWriterImpl saveTestClass
+INFO: Base directory for saving test class: /mnt/c/PrivateProjects/BA_24/gdart-fork
+Feb 13, 2025 1:32:22 AM tools.aqua.dse.testgeneration.FileWriterImpl saveTestClass
+INFO: Successfully saved file: /mnt/c/PrivateProjects/BA_24/gdart-fork/coverage-report/src/test/java/FloatCasesTest.java
