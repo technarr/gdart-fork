@@ -1,0 +1,13 @@
+Feb 16, 2025 4:46:14 AM tools.aqua.dse.tree.ConstraintsTree <init>
+INFO: Exploration Strategy: tools.aqua.dse.tree.BFSExplorationStrategy@66133adc
+Feb 16, 2025 4:46:14 AM tools.aqua.dse.tree.ConstraintsTree <init>
+INFO: Incremental solving: false
+Feb 16, 2025 4:46:14 AM tools.aqua.dse.tree.ConstraintsTree <init>
+INFO: Solver: BoundedSolverContext
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Feb 16, 2025 4:46:18 AM tools.aqua.dse.testgeneration.FileWriterImpl saveTestClass
+INFO: Base directory for saving test class: /mnt/c/PrivateProjects/BA_24/gdart-fork
+Feb 16, 2025 4:46:18 AM tools.aqua.dse.testgeneration.FileWriterImpl saveTestClass
+INFO: Successfully saved file: /mnt/c/PrivateProjects/BA_24/gdart-fork/coverage-report/src/test/java/Shifting3Test.java

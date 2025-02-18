@@ -1,0 +1,4 @@
+Random seed: -1287565023770661600
+./executor.sh          -cp /tmp/tmp.QQ5EAvySQj:./verifier-stub/target/verifier-stub-1.0.jar -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true -Dtaint.flow=OFF CharCases
+Decision{condition=!(((_ zero_extend 16) '__char_0') != 0), branches=2, branchId=0, assumption=false}
+OK: 

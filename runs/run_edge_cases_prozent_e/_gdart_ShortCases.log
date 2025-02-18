@@ -1,0 +1,6 @@
+Random seed: 7706311879640653360
+./executor.sh          -cp /tmp/tmp.7ksYHLHcnY:./verifier-stub/target/verifier-stub-1.0.jar -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true -Dtaint.flow=OFF ShortCases
+Decision{condition=(-32768 != ((_ sign_extend 16) '__short_0')), branches=2, branchId=1, assumption=false}
+Decision{condition=(32767 != ((_ sign_extend 16) '__short_0')), branches=2, branchId=1, assumption=false}
+Decision{condition=!(((_ sign_extend 16) '__short_0') != 0), branches=2, branchId=0, assumption=false}
+OK: 

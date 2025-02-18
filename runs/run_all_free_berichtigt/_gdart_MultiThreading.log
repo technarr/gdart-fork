@@ -1,0 +1,10 @@
+Random seed: -6876181201466190223
+./executor.sh          -cp /tmp/tmp.P2h31Hr4Co:./verifier-stub/target/verifier-stub-1.0.jar -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true -Dtaint.flow=OFF MultiThreading
+OK: 
+Config.isCoverageReport: trueTRYING TO WRITE FILE: /mnt/c/PrivateProjects/BA_24/gdart-fork/coverage-report/src/test/java/MultiThreadingTest.java
+Successfully saved file: /mnt/c/PrivateProjects/BA_24/gdart-fork/coverage-report/src/test/java/MultiThreadingTest.java
+
++ OK[complete path:true] . 
+
+Flows recorded for 1 paths. Using 1 (1.0) paths for information flow analysis.
+[END OF OUTPUT]

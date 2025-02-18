@@ -1,0 +1,10 @@
+Random seed: -3886047697286515516
+./executor.sh          -cp /tmp/tmp.cnjOjtsfnM:./verifier-stub/target/verifier-stub-1.0.jar   SideEffects
+OK: 
+Config.isCoverageReport: trueTRYING TO WRITE FILE: /mnt/c/PrivateProjects/BA_24/gdart-fork/coverage-report/src/test/java/SideEffectsTest.java
+Successfully saved file: /mnt/c/PrivateProjects/BA_24/gdart-fork/coverage-report/src/test/java/SideEffectsTest.java
+
++ OK[complete path:true] . 
+
+Flows recorded for 1 paths. Using 1 (1.0) paths for information flow analysis.
+[END OF OUTPUT]

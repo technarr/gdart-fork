@@ -1,0 +1,25 @@
+Random seed: 7998884073772781235
+./executor.sh          -cp /tmp/tmp.jmNxHpSmAj:./verifier-stub/target/verifier-stub-1.0.jar -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true -Dtaint.flow=OFF StringCases
+Decision{condition=(='__string_0') , branches=2, branchId=0, assumption=false}
+OK: 
+./executor.sh         -Dconcolic.strings=[b64]QQ== -cp /tmp/tmp.jmNxHpSmAj:./verifier-stub/target/verifier-stub-1.0.jar -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true -Dtaint.flow=OFF StringCases
+Decision{condition=!(='__string_0') , branches=2, branchId=1, assumption=false}
+Decision{condition=!(=a'__string_0') , branches=2, branchId=1, assumption=false}
+OK: 
+./executor.sh         -Dconcolic.strings=[b64]YQ== -cp /tmp/tmp.jmNxHpSmAj:./verifier-stub/target/verifier-stub-1.0.jar -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true -Dtaint.flow=OFF StringCases
+Decision{condition=!(='__string_0') , branches=2, branchId=1, assumption=false}
+Decision{condition=(=a'__string_0') , branches=2, branchId=0, assumption=false}
+OK: 
+Config.isCoverageReport: trueTRYING TO WRITE FILE: /mnt/c/PrivateProjects/BA_24/gdart-fork/coverage-report/src/test/java/StringCasesTest.java
+Successfully saved file: /mnt/c/PrivateProjects/BA_24/gdart-fork/coverage-report/src/test/java/StringCasesTest.java
+
++ 0 : (='__string_0') 
+  + OK[complete path:true] . 
++ 1 : !(='__string_0') 
+  + 0 : (=a'__string_0') 
+    + OK[complete path:true] . __string_0:=a
+  + 1 : !(=a'__string_0') 
+    + OK[complete path:true] . __string_0:=A
+
+Flows recorded for 3 paths. Using 3 (1.0) paths for information flow analysis.
+[END OF OUTPUT]

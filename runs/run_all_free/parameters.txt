@@ -1,0 +1,5 @@
+Run Timestamp: Thu Feb 13 01:21:41 CET 2025
+DSE: -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true
+TAINT: -Dtaint.flow=OFF
+SOLVER: -Ddse.dp=cvc5
+SOLVER_FLAGS: -Ddse.witness=true -Ddse.b64encode=true -Ddse.dp.incremental=true -Ddse.coveragereport=true -Ddse.dp=cvc5

@@ -1,0 +1,32 @@
+Execution Summary - Mon Feb 17 00:16:11 CET 2025
+-------------------------------------------
+Class: BooleanCases
+  Compilation: succeeded
+Class: ByteCases
+  Compilation: succeeded
+Class: CharCases
+  Compilation: succeeded
+Class: DeadCode
+  Compilation: succeeded
+Class: DoubleCases
+  Compilation: succeeded
+Class: ExceptionHandling
+  Compilation: succeeded
+Class: FloatCases
+  Compilation: succeeded
+Class: InfiniteLoop
+  Compilation: succeeded
+Class: IntegerCases
+  Compilation: succeeded
+Class: LongCases
+  Compilation: succeeded
+Class: MultiThreading
+  Compilation: succeeded
+Class: Recursion
+  Compilation: succeeded
+Class: ShortCases
+  Compilation: succeeded
+Class: SideEffects
+  Compilation: succeeded
+Class: StringCases
+  Compilation: succeeded

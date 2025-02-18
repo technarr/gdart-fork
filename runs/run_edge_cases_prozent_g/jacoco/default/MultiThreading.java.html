@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MultiThreading.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">coverage-report</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">MultiThreading.java</span></div><h1>MultiThreading.java</h1><pre class="source lang-java linenums">import tools.aqua.concolic.Verifier;
+
+<span class="nc" id="L3">public class MultiThreading {</span>
+    private static int counter;
+
+    public static void main(String[] args) {
+<span class="fc" id="L7">        counter = Verifier.nondetInt();</span>
+<span class="fc" id="L8">        Thread t1 = new Thread(() -&gt; counter++);</span>
+<span class="fc" id="L9">        Thread t2 = new Thread(() -&gt; counter++);</span>
+
+<span class="fc" id="L11">        t1.start();</span>
+<span class="fc" id="L12">        t2.start();</span>
+
+        try {
+<span class="fc" id="L15">            t1.join();</span>
+<span class="fc" id="L16">            t2.join();</span>
+<span class="nc" id="L17">        } catch (InterruptedException e) {</span>
+<span class="nc" id="L18">            e.printStackTrace();</span>
+<span class="fc" id="L19">        }</span>
+
+<span class="fc" id="L21">        System.out.println(&quot;Final counter: &quot; + counter);</span>
+<span class="fc" id="L22">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

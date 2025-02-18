@@ -1,0 +1,25 @@
+Random seed: -7231239935352770391
+./executor.sh          -cp /tmp/tmp.jwg4lMHsmC:./verifier-stub/target/verifier-stub-1.0.jar -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true -Dtaint.flow=OFF FloatClass
+Decision{condition=(fp.eq (fp.add (RNE RoundingMode) '__float_1' '__float_0') '__float_0'), branches=2, branchId=0, assumption=false}
+Decision{condition=(fp.eq ((_ to_fp  11 53) (RNE RoundingMode) '__float_1') 0.0), branches=2, branchId=1, assumption=false}
+OK: 
+./executor.sh       -Dconcolic.floats=[b64]LUluZmluaXR5,LTEuMA==   -cp /tmp/tmp.jwg4lMHsmC:./verifier-stub/target/verifier-stub-1.0.jar -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true -Dtaint.flow=OFF FloatClass
+Decision{condition=(fp.eq (fp.add (RNE RoundingMode) '__float_1' '__float_0') '__float_0'), branches=2, branchId=0, assumption=false}
+Decision{condition=!(fp.eq ((_ to_fp  11 53) (RNE RoundingMode) '__float_1') 0.0), branches=2, branchId=0, assumption=false}
+ERROR: java/lang/AssertionError
+./executor.sh       -Dconcolic.floats=[b64]LTAuMA==,TmFO   -cp /tmp/tmp.jwg4lMHsmC:./verifier-stub/target/verifier-stub-1.0.jar -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true -Dtaint.flow=OFF FloatClass
+Decision{condition=!(fp.eq (fp.add (RNE RoundingMode) '__float_1' '__float_0') '__float_0'), branches=2, branchId=1, assumption=false}
+OK: 
+Config.isCoverageReport: trueTRYING TO WRITE FILE: /mnt/c/PrivateProjects/BA_24/gdart-fork/coverage-report/src/test/java/FloatClassTest.java
+Successfully saved file: /mnt/c/PrivateProjects/BA_24/gdart-fork/coverage-report/src/test/java/FloatClassTest.java
+
++ 0 : (fp.eq (fp.add (RNE RoundingMode) '__float_1' '__float_0') '__float_0')
+  + 0 : !(fp.eq ((_ to_fp  11 53) (RNE RoundingMode) '__float_1') 0.0)
+    + ERROR[complete path:true] . __float_0:=-Infinity,__float_1:=-1.0 . java/lang/AssertionError
+  + 1 : (fp.eq ((_ to_fp  11 53) (RNE RoundingMode) '__float_1') 0.0)
+    + OK[complete path:true] . 
++ 1 : !(fp.eq (fp.add (RNE RoundingMode) '__float_1' '__float_0') '__float_0')
+  + OK[complete path:true] . __float_0:=-0.0,__float_1:=NaN
+
+Flows recorded for 3 paths. Using 3 (1.0) paths for information flow analysis.
+[END OF OUTPUT]

@@ -1,0 +1,49 @@
+Feb 17, 2025 12:11:48 AM tools.aqua.dse.tree.ConstraintsTree <init>
+INFO: Exploration Strategy: tools.aqua.dse.tree.DFSExplorationStrategy@6fdb1f78
+Feb 17, 2025 12:11:48 AM tools.aqua.dse.tree.ConstraintsTree <init>
+INFO: Incremental solving: true
+Feb 17, 2025 12:11:48 AM tools.aqua.dse.tree.ConstraintsTree <init>
+INFO: Solver: CVC5SolverContext
+Feb 17, 2025 12:11:52 AM tools.aqua.dse.tree.ConstraintsTree assertExpression
+WARNING: Failed to add constrtaint [Lgov.nasa.jpf.constraints.api.Expression;@69a3d1d due to io.github.cvc5.CVC5ApiException: Expected val '-8388608' to be non negative.
+Feb 17, 2025 12:11:59 AM tools.aqua.dse.tree.ConstraintsTree assertExpression
+WARNING: Failed to add constrtaint [Lgov.nasa.jpf.constraints.api.Expression;@7a187f14 due to io.github.cvc5.CVC5ApiException: Expected val '-8388608' to be non negative.
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Feb 17, 2025 12:12:09 AM tools.aqua.dse.testgeneration.TestGeneratorImpl lambda$generateTestsBasedOnValuations$1
+INFO: Valuation mit 0 folgenden Entries:
+Feb 17, 2025 12:12:09 AM tools.aqua.dse.testgeneration.TestGeneratorImpl lambda$generateTestsBasedOnValuations$1
+INFO: Valuation mit 1 folgenden Entries:
+Feb 17, 2025 12:12:09 AM tools.aqua.dse.testgeneration.TestGeneratorImpl lambda$generateTestsBasedOnValuations$0
+INFO: Variable: '__float_0'
+Wert: 1.7014117E38
+Feb 17, 2025 12:12:09 AM tools.aqua.dse.testgeneration.TestGeneratorImpl lambda$generateTestsBasedOnValuations$1
+INFO: Valuation mit 1 folgenden Entries:
+Feb 17, 2025 12:12:09 AM tools.aqua.dse.testgeneration.TestGeneratorImpl lambda$generateTestsBasedOnValuations$0
+INFO: Variable: '__float_0'
+Wert: 3.4028235E38
+Feb 17, 2025 12:12:09 AM tools.aqua.dse.testgeneration.TestGeneratorImpl lambda$generateTestsBasedOnValuations$1
+INFO: Valuation mit 1 folgenden Entries:
+Feb 17, 2025 12:12:09 AM tools.aqua.dse.testgeneration.TestGeneratorImpl lambda$generateTestsBasedOnValuations$0
+INFO: Variable: '__float_0'
+Wert: 1.4E-45
+Feb 17, 2025 12:12:09 AM tools.aqua.dse.testgeneration.TestGeneratorImpl lambda$generateTestsBasedOnValuations$1
+INFO: Valuation mit 1 folgenden Entries:
+Feb 17, 2025 12:12:09 AM tools.aqua.dse.testgeneration.TestGeneratorImpl lambda$generateTestsBasedOnValuations$0
+INFO: Variable: '__float_0'
+Wert: 1.4E-45
+Feb 17, 2025 12:12:09 AM tools.aqua.dse.testgeneration.TestGeneratorImpl lambda$generateTestsBasedOnValuations$1
+INFO: Valuation mit 1 folgenden Entries:
+Feb 17, 2025 12:12:09 AM tools.aqua.dse.testgeneration.TestGeneratorImpl lambda$generateTestsBasedOnValuations$0
+INFO: Variable: '__float_0'
+Wert: Infinity
+Feb 17, 2025 12:12:09 AM tools.aqua.dse.testgeneration.TestGeneratorImpl lambda$generateTestsBasedOnValuations$1
+INFO: Valuation mit 1 folgenden Entries:
+Feb 17, 2025 12:12:09 AM tools.aqua.dse.testgeneration.TestGeneratorImpl lambda$generateTestsBasedOnValuations$0
+INFO: Variable: '__float_0'
+Wert: NaN
+Feb 17, 2025 12:12:09 AM tools.aqua.dse.testgeneration.FileWriterImpl saveTestClass
+INFO: Base directory for saving test class: /mnt/c/PrivateProjects/BA_24/gdart-fork
+Feb 17, 2025 12:12:09 AM tools.aqua.dse.testgeneration.FileWriterImpl saveTestClass
+INFO: Successfully saved file: /mnt/c/PrivateProjects/BA_24/gdart-fork/coverage-report/src/test/java/FloatCasesTest.java

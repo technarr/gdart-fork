@@ -1,0 +1,21 @@
+Random seed: -5873520485738203822
+./executor.sh          -cp /tmp/tmp.Y1OK3fCLrK:./verifier-stub/target/verifier-stub-1.0.jar -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true -Dtaint.flow=OFF StartsWith
+Decision{condition=(='__string_0') , branches=2, branchId=0, assumption=false}
+Decision{condition=!(='__string_0'GOTCHA) , branches=2, branchId=1, assumption=false}
+OK: 
+./executor.sh         -Dconcolic.strings=[b64]QQ== -cp /tmp/tmp.Y1OK3fCLrK:./verifier-stub/target/verifier-stub-1.0.jar -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true -Dtaint.flow=OFF StartsWith
+Decision{condition=!(='__string_0') , branches=2, branchId=1, assumption=false}
+OK: 
+Config.isCoverageReport: trueTRYING TO WRITE FILE: /mnt/c/PrivateProjects/BA_24/gdart-fork/coverage-report/src/test/java/StartsWithTest.java
+Successfully saved file: /mnt/c/PrivateProjects/BA_24/gdart-fork/coverage-report/src/test/java/StartsWithTest.java
+
++ 0 : (='__string_0') 
+  + 0 : !!(='__string_0'GOTCHA) 
+    + UNSAT
+  + 1 : !(='__string_0'GOTCHA) 
+    + OK[complete path:true] . 
++ 1 : !(='__string_0') 
+  + OK[complete path:true] . __string_0:=A
+
+Flows recorded for 2 paths. Using 2 (1.0) paths for information flow analysis.
+[END OF OUTPUT]

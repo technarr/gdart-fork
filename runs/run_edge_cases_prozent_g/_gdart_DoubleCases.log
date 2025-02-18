@@ -1,0 +1,68 @@
+Random seed: -834003396821197499
+./executor.sh          -cp /tmp/tmp.n32E5TX1wq:./verifier-stub/target/verifier-stub-1.0.jar -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true -Dtaint.flow=OFF DoubleCases
+Decision{condition=(fp.eq '__double_0' '__double_0'), branches=2, branchId=1, assumption=false}
+Decision{condition=!(fp.eq '__double_0' Infinity), branches=2, branchId=1, assumption=false}
+Decision{condition=!(fp.eq '__double_0' -Infinity), branches=2, branchId=1, assumption=false}
+Decision{condition=!(fp.eq '__double_0' 4.9E-324), branches=2, branchId=1, assumption=false}
+Decision{condition=!(fp.eq '__double_0' 1.7976931348623157E308), branches=2, branchId=1, assumption=false}
+Decision{condition=(fp.eq '__double_0' 0.0), branches=2, branchId=0, assumption=false}
+OK: 
+./executor.sh        -Dconcolic.doubles=[b64]OC45ODg0NjU2NzQzMTE1NzlFMzA3  -cp /tmp/tmp.n32E5TX1wq:./verifier-stub/target/verifier-stub-1.0.jar -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true -Dtaint.flow=OFF DoubleCases
+Decision{condition=(fp.eq '__double_0' '__double_0'), branches=2, branchId=1, assumption=false}
+Decision{condition=!(fp.eq '__double_0' Infinity), branches=2, branchId=1, assumption=false}
+Decision{condition=!(fp.eq '__double_0' -Infinity), branches=2, branchId=1, assumption=false}
+Decision{condition=!(fp.eq '__double_0' 4.9E-324), branches=2, branchId=1, assumption=false}
+Decision{condition=!(fp.eq '__double_0' 1.7976931348623157E308), branches=2, branchId=1, assumption=false}
+Decision{condition=!(fp.eq '__double_0' 0.0), branches=2, branchId=1, assumption=false}
+OK: 
+./executor.sh        -Dconcolic.doubles=[b64]MS43OTc2OTMxMzQ4NjIzMTU3RTMwOA==  -cp /tmp/tmp.n32E5TX1wq:./verifier-stub/target/verifier-stub-1.0.jar -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true -Dtaint.flow=OFF DoubleCases
+Decision{condition=(fp.eq '__double_0' '__double_0'), branches=2, branchId=1, assumption=false}
+Decision{condition=!(fp.eq '__double_0' Infinity), branches=2, branchId=1, assumption=false}
+Decision{condition=!(fp.eq '__double_0' -Infinity), branches=2, branchId=1, assumption=false}
+Decision{condition=!(fp.eq '__double_0' 4.9E-324), branches=2, branchId=1, assumption=false}
+Decision{condition=(fp.eq '__double_0' 1.7976931348623157E308), branches=2, branchId=0, assumption=false}
+OK: 
+./executor.sh        -Dconcolic.doubles=[b64]NC45RS0zMjQ=  -cp /tmp/tmp.n32E5TX1wq:./verifier-stub/target/verifier-stub-1.0.jar -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true -Dtaint.flow=OFF DoubleCases
+Decision{condition=(fp.eq '__double_0' '__double_0'), branches=2, branchId=1, assumption=false}
+Decision{condition=!(fp.eq '__double_0' Infinity), branches=2, branchId=1, assumption=false}
+Decision{condition=!(fp.eq '__double_0' -Infinity), branches=2, branchId=1, assumption=false}
+Decision{condition=(fp.eq '__double_0' 4.9E-324), branches=2, branchId=0, assumption=false}
+OK: 
+./executor.sh        -Dconcolic.doubles=[b64]NC45RS0zMjQ=  -cp /tmp/tmp.n32E5TX1wq:./verifier-stub/target/verifier-stub-1.0.jar -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true -Dtaint.flow=OFF DoubleCases
+Decision{condition=(fp.eq '__double_0' '__double_0'), branches=2, branchId=1, assumption=false}
+Decision{condition=!(fp.eq '__double_0' Infinity), branches=2, branchId=1, assumption=false}
+Decision{condition=!(fp.eq '__double_0' -Infinity), branches=2, branchId=1, assumption=false}
+Decision{condition=(fp.eq '__double_0' 4.9E-324), branches=2, branchId=0, assumption=false}
+OK: 
+./executor.sh        -Dconcolic.doubles=[b64]SW5maW5pdHk=  -cp /tmp/tmp.n32E5TX1wq:./verifier-stub/target/verifier-stub-1.0.jar -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true -Dtaint.flow=OFF DoubleCases
+Decision{condition=(fp.eq '__double_0' '__double_0'), branches=2, branchId=1, assumption=false}
+Decision{condition=(fp.eq '__double_0' Infinity), branches=2, branchId=0, assumption=false}
+OK: 
+./executor.sh        -Dconcolic.doubles=[b64]TmFO  -cp /tmp/tmp.n32E5TX1wq:./verifier-stub/target/verifier-stub-1.0.jar -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true -Dtaint.flow=OFF DoubleCases
+Decision{condition=!(fp.eq '__double_0' '__double_0'), branches=2, branchId=0, assumption=false}
+OK: 
+Config.isCoverageReport: trueTRYING TO WRITE FILE: /mnt/c/PrivateProjects/BA_24/gdart-fork/coverage-report/src/test/java/DoubleCasesTest.java
+Successfully saved file: /mnt/c/PrivateProjects/BA_24/gdart-fork/coverage-report/src/test/java/DoubleCasesTest.java
+
++ 0 : !(fp.eq '__double_0' '__double_0')
+  + OK[complete path:true] . __double_0:=NaN
++ 1 : (fp.eq '__double_0' '__double_0')
+  + 0 : (fp.eq '__double_0' Infinity)
+    + OK[complete path:true] . __double_0:=Infinity
+  + 1 : !(fp.eq '__double_0' Infinity)
+    + 0 : !!(fp.eq '__double_0' -Infinity)
+      + DIVERGED[complete path:true] . __double_0:=4.9E-324
+    + 1 : !(fp.eq '__double_0' -Infinity)
+      + 0 : (fp.eq '__double_0' 4.9E-324)
+        + OK[complete path:true] . __double_0:=4.9E-324
+      + 1 : !(fp.eq '__double_0' 4.9E-324)
+        + 0 : (fp.eq '__double_0' 1.7976931348623157E308)
+          + OK[complete path:true] . __double_0:=1.7976931348623157E308
+        + 1 : !(fp.eq '__double_0' 1.7976931348623157E308)
+          + 0 : (fp.eq '__double_0' 0.0)
+            + OK[complete path:true] . 
+          + 1 : !(fp.eq '__double_0' 0.0)
+            + OK[complete path:true] . __double_0:=8.988465674311579E307
+
+Flows recorded for 7 paths. Using 7 (1.0) paths for information flow analysis.
+[END OF OUTPUT]

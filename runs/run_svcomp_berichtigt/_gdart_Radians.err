@@ -1,0 +1,15 @@
+Feb 18, 2025 2:58:09 PM tools.aqua.dse.tree.ConstraintsTree <init>
+INFO: Exploration Strategy: tools.aqua.dse.tree.BFSExplorationStrategy@66133adc
+Feb 18, 2025 2:58:09 PM tools.aqua.dse.tree.ConstraintsTree <init>
+INFO: Incremental solving: false
+Feb 18, 2025 2:58:09 PM tools.aqua.dse.tree.ConstraintsTree <init>
+INFO: Solver: BoundedSolverContext
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Feb 18, 2025 2:58:12 PM tools.aqua.dse.testgeneration.TestGeneratorImpl lambda$generateTestsBasedOnValuations$1
+INFO: Valuation mit 0 folgenden Entries:
+Feb 18, 2025 2:58:13 PM tools.aqua.dse.testgeneration.FileWriterImpl saveTestClass
+INFO: Base directory for saving test class: /mnt/c/PrivateProjects/BA_24/gdart-fork
+Feb 18, 2025 2:58:13 PM tools.aqua.dse.testgeneration.FileWriterImpl saveTestClass
+INFO: Successfully saved file: /mnt/c/PrivateProjects/BA_24/gdart-fork/coverage-report/src/test/java/RadiansTest.java

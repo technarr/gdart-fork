@@ -1,0 +1,17 @@
+Random seed: 5389015070669161529
+./executor.sh          -cp /tmp/tmp.FD6cLhDQWt:./verifier-stub/target/verifier-stub-1.0.jar -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true -Dtaint.flow=OFF Radians
+Decision{condition=(fp.geq (fp.mul (RNE RoundingMode) 0.017453292519943295 '__double_0') 0.0), branches=2, branchId=0, assumption=false}
+OK: 
+./executor.sh        -Dconcolic.doubles=[b64]TmFO  -cp /tmp/tmp.FD6cLhDQWt:./verifier-stub/target/verifier-stub-1.0.jar -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true -Dtaint.flow=OFF Radians
+Decision{condition=(fp.lt (fp.mul (RNE RoundingMode) 0.017453292519943295 '__double_0') 0.0), branches=2, branchId=1, assumption=false}
+ERROR: java/lang/AssertionError
+Config.isCoverageReport: trueTRYING TO WRITE FILE: /mnt/c/PrivateProjects/BA_24/gdart-fork/coverage-report/src/test/java/RadiansTest.java
+Successfully saved file: /mnt/c/PrivateProjects/BA_24/gdart-fork/coverage-report/src/test/java/RadiansTest.java
+
++ 0 : (fp.geq (fp.mul (RNE RoundingMode) 0.017453292519943295 '__double_0') 0.0)
+  + OK[complete path:true] . 
++ 1 : (fp.lt (fp.mul (RNE RoundingMode) 0.017453292519943295 '__double_0') 0.0)
+  + ERROR[complete path:true] . __double_0:=NaN . java/lang/AssertionError
+
+Flows recorded for 2 paths. Using 2 (1.0) paths for information flow analysis.
+[END OF OUTPUT]

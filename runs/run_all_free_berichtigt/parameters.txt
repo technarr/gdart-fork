@@ -1,0 +1,67 @@
+Run Timestamp: Sun Feb 16 22:39:59 CET 2025
+DSE: -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true
+TAINT: -Dtaint.flow=OFF
+SOLVER: -Ddse.dp=cvc5
+SOLVER_FLAGS: -Ddse.witness=true -Ddse.b64encode=true -Ddse.dp.incremental=true -Ddse.coveragereport=true -Ddse.dp=cvc5
+
+Execution Summary:
+Execution Summary - Sun Feb 16 22:40:00 CET 2025
+-------------------------------------------
+Class: Addition01
+  Compilation: succeeded
+Class: ArrayIteration01
+  Compilation: succeeded
+Class: BoundCheck100
+  Compilation: succeeded
+Class: BoundCheck200
+  Compilation: succeeded
+Class: BoundCheck30
+  Compilation: succeeded
+Class: Double2Long
+  Compilation: succeeded
+Class: BooleanCases
+  Compilation: succeeded
+Class: ByteCases
+  Compilation: succeeded
+Class: CharCases
+  Compilation: succeeded
+Class: DeadCode
+  Compilation: succeeded
+Class: DoubleCases
+  Compilation: succeeded
+Class: ExceptionHandling
+  Compilation: succeeded
+Class: FloatCases
+  Compilation: succeeded
+Class: InfiniteLoop
+  Compilation: succeeded
+Class: IntegerCases
+  Compilation: succeeded
+Class: LongCases
+  Compilation: succeeded
+Class: MultiThreading
+  Compilation: succeeded
+Class: Recursion
+  Compilation: succeeded
+Class: ShortCases
+  Compilation: succeeded
+Class: SideEffects
+  Compilation: succeeded
+Class: StringCases
+  Compilation: succeeded
+Class: FloatClass
+  Compilation: succeeded
+Class: List2
+  Compilation: succeeded
+Class: OverapproximationString01
+  Compilation: succeeded
+Class: Radians
+  Compilation: succeeded
+Class: Shifting
+  Compilation: succeeded
+Class: Shifting2
+  Compilation: succeeded
+Class: Shifting3
+  Compilation: succeeded
+Class: StartsWith
+  Compilation: succeeded

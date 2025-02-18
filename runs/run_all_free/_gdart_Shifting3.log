@@ -1,0 +1,34 @@
+Random seed: 6882665527505365886
+./executor.sh          -cp /tmp/tmp.LFbZj2l6Ls:./verifier-stub/target/verifier-stub-1.0.jar -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true -Dtaint.flow=OFF Shifting3
+Decision{condition=(1 bvsgt '__int_0'), branches=2, branchId=1, assumption=false}
+OK: 
+./executor.sh     -Dconcolic.ints=[b64]MjE0NzQ4MzY0Nw==     -cp /tmp/tmp.LFbZj2l6Ls:./verifier-stub/target/verifier-stub-1.0.jar -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true -Dtaint.flow=OFF Shifting3
+Decision{condition=(1 bvsle '__int_0'), branches=2, branchId=0, assumption=false}
+Decision{condition=(100 bvslt '__int_0'), branches=2, branchId=0, assumption=false}
+OK: 
+./executor.sh     -Dconcolic.ints=[b64]Mzc=     -cp /tmp/tmp.LFbZj2l6Ls:./verifier-stub/target/verifier-stub-1.0.jar -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true -Dtaint.flow=OFF Shifting3
+Decision{condition=(1 bvsle '__int_0'), branches=2, branchId=0, assumption=false}
+Decision{condition=(100 bvsge '__int_0'), branches=2, branchId=1, assumption=false}
+Decision{condition=((1 << ((_ sign_extend 32) ('__int_0' & 63))) != 1), branches=2, branchId=1, assumption=false}
+OK: 
+./executor.sh     -Dconcolic.ints=[b64]NjQ=     -cp /tmp/tmp.LFbZj2l6Ls:./verifier-stub/target/verifier-stub-1.0.jar -Dconcolic.execution=true -Ddse.witness=false -Ddse.b64encode=true -Dtaint.flow=OFF Shifting3
+Decision{condition=(1 bvsle '__int_0'), branches=2, branchId=0, assumption=false}
+Decision{condition=(100 bvsge '__int_0'), branches=2, branchId=1, assumption=false}
+Decision{condition=((1 << ((_ sign_extend 32) ('__int_0' & 63))) == 1), branches=2, branchId=0, assumption=false}
+ERROR: java/lang/AssertionError
+Config.isCoverageReport: trueTRYING TO WRITE FILE: /mnt/c/PrivateProjects/BA_24/gdart-fork/coverage-report/src/test/java/Shifting3Test.java
+Successfully saved file: /mnt/c/PrivateProjects/BA_24/gdart-fork/coverage-report/src/test/java/Shifting3Test.java
+
++ 0 : (1 bvsle '__int_0')
+  + 0 : (100 bvslt '__int_0')
+    + OK[complete path:true] . __int_0:=2147483647
+  + 1 : (100 bvsge '__int_0')
+    + 0 : ((1 << ((_ sign_extend 32) ('__int_0' & 63))) == 1)
+      + ERROR[complete path:true] . __int_0:=64 . java/lang/AssertionError
+    + 1 : ((1 << ((_ sign_extend 32) ('__int_0' & 63))) != 1)
+      + OK[complete path:true] . __int_0:=37
++ 1 : (1 bvsgt '__int_0')
+  + OK[complete path:true] . 
+
+Flows recorded for 4 paths. Using 4 (1.0) paths for information flow analysis.
+[END OF OUTPUT]
